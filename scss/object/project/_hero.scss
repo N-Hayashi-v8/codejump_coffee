@@ -1,0 +1,19 @@
+﻿@use '../../foundation/variables' as v;
+
+.p-logo{
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  z-index: 10;
+  text-shadow: v.$shadow-light;
+
+  &::before{
+    content: attr(data-logo);
+    display: block;
+    color: v.$color-white;
+    font-size: clamp(3rem,11vw,7.5rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.03em;
+  }
+}

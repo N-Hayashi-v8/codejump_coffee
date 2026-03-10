@@ -1,0 +1,22 @@
+﻿@use '../../foundation/variables' as v;
+@use '../../foundation/mixin' as m;
+
+.c-section-title{
+  display: grid;
+  place-items: center;
+  height: 94px;
+  margin-bottom: 10px;
+  color: v.$color-white;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: v.$shadow-light;
+}
+
+@include m.mq-pc{
+  .c-section-title{
+    height: 300px;
+    margin-bottom: 20px;
+    font-size: 4.5rem;
+  }
+}

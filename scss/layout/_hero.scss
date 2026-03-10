@@ -1,0 +1,17 @@
+﻿
+.l-hero{
+  display: grid;
+  grid-template-areas: 'hero-stack';
+  min-height: 100vh;
+  background: center center / cover no-repeat url('../img/mainvisual.jpg');
+
+  &> *{
+    grid-area: hero-stack;
+  }
+}
+
+@supports (height: 100svh){
+  .l-hero{
+    min-height: 100svh;
+  }
+}

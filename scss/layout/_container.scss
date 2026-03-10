@@ -1,0 +1,9 @@
+﻿@use '../foundation/variables' as v;
+
+.l-container{
+  width: 100%;
+  max-width: v.$content-max-width;
+  margin-inline: auto;
+  padding-inline: v.$content-side-padding;
+  box-sizing: border-box;
+}
